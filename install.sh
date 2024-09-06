@@ -27,4 +27,4 @@ systemctl restart nginx
 clear
 apt-get install screen -y
 sudo apt install certbot python3-certbot-nginx -y
-certbot --nginx
+sudo certbot --nginx --no-redirect -d your_domain -d www.your_domain
