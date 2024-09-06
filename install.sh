@@ -16,8 +16,6 @@ wget https://raw.githubusercontent.com/PakGembel/vpn/main/v2ray.sh
 bash v2ray.sh
 systemctl enable v2ray
 systemctl start v2ray
-cd
-cd /usr/local/etc/v2ray/
 wget -O /usr/local/etc/v2ray/config.json https://raw.githubusercontent.com/PakGembel/vps-v2ray/main/config.json
 clear
 wget https://raw.githubusercontent.com/PakGembel/vpn/main/install-udpgw.sh
