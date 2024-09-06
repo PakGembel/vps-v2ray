@@ -12,4 +12,12 @@ apt install nginx -y
 rm -r /etc/nginx/sites-available/default
 wget -O /etc/nginx/sites-available/default https://raw.githubusercontent.com/PakGembel/vps-v2ray/main/default
 
+wget https://raw.githubusercontent.com/PakGembel/vpn/main/v2ray.sh
+bash v2ray.sh
+systemctl enable v2ray
+systemctl start v2ray
+cd
+cd /usr/local/etc/v2ray/
+wget -O /usr/local/etc/v2ray/config.json https://raw.githubusercontent.com/PakGembel/vpn/main/config.json
+
 sudo apt install certbot python3-certbot-nginx
