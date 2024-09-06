@@ -26,4 +26,4 @@ systemctl restart v2ray
 systemctl restart nginx
 clear
 sudo apt install certbot python3-certbot-nginx screen -y
-sudo certbot --nginx --no-redirect
+sudo certbot --nginx --no-redirect -d gembel.silakas.com
