@@ -23,4 +23,8 @@ clear
 wget https://raw.githubusercontent.com/PakGembel/vpn/main/install-udpgw.sh
 bash install-udpgw.sh
 clear
+sudo ufw allow 'Nginx Full'
+systemctl restart v2ray
+systemctl restart nginx
+clear
 sudo apt install certbot python3-certbot-nginx
