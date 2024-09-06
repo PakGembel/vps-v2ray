@@ -27,5 +27,6 @@ sudo ufw allow 'Nginx Full'
 systemctl restart v2ray
 systemctl restart nginx
 clear
+apt-get install screen -y
 sudo apt install certbot python3-certbot-nginx -y
 certbot --nginx
